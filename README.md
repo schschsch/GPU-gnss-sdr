@@ -9,3 +9,5 @@
 > GPU 加速跟踪模块由 schschsch开发，同样遵循 GPLv3 许可。
 
 基于GNSS-SDR，增加了veml_tracking_gpu模块，通过cuda将主要信号tracking计算通过GPU进行加速，实际效果在单channel情况下不佳，多channel情况下才能得到较好的效果。
+使用方法为在设置文件中令implementation == "... Tracking_GPU"
+实际只为了运行尝试了"GALILEO_E!_DLL_PLL_Tracking_GPU"，其余尚未在块工厂中加入。
